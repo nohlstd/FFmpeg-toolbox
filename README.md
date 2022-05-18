@@ -1,6 +1,5 @@
 # 🎥 FFmpeg toolbox by bluedragon
-<h3> Toolbox for FFmpeg </h3>
-</p>
+# Toolbox for FFmpeg
 # 🛠 Features
 * mp4 video re-encoder
 * mkv video re-encoder
