@@ -6,3 +6,8 @@
 * mkv video re-encoder
 * video upscaling/down scaling
 * speed up video
+
+# 🖥️ Supported systems
+*  ✅ Windows
+*  🚫 Linux
+*  🚫 macOS
