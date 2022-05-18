@@ -12,7 +12,8 @@ ECHO 1.  Selection 1  (for .mp4)
 ECHO 2.  Selection 2  (for .mkv)
 ECHO 3.  Selection 3 (upscaling)
 ECHO 4.  Selection 4 (speed up video [bugged])
-ECHO 5.  Selection 5 (resampling video [motion blur])
+ECHO 5.  Selection 5 (resampling [blur])
+ECHO 6.  Selection 6 simple converter *any format)
 ECHO ==========PRESS 'Q' TO QUIT=========
 ECHO.
 
@@ -24,6 +25,7 @@ IF /I '%INPUT%'=='2' GOTO Selection2
 IF /I '%INPUT%'=='3' GOTO Selection3
 IF /I '%INPUT%'=='4' GOTO Selection4
 IF /I '%INPUT%'=='5' GOTO Selection5
+IF /I '%INPUT%'=='6' GOTO Selection6
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
@@ -119,5 +121,22 @@ timeout 1 >nul
 CLS
 ffmpeg.exe -i input.mp4 -crf 15 -vf "tmix=frames=4:weights=1, scale=1920x1080:flags=lanczos, fps=%fpsy%" output-resampled.mp4
 pause
+
+:Selection6
+Color 0D
+echo.
+echo.
+echo.
+echo.
+echo What is your input format?
+set /p int=
+echo.
+timeout 1 >nul
+echo Which format you want for output?
+set /p out=
+ffmpeg -i input.%int% output.%out%
+CLS
+pause
+
 
 :Quit
