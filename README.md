@@ -1,7 +1,7 @@
 # 🎥 FFmpeg toolbox by bluedragon
-<h3> Toolbox for FFmpeg </h3>
-## 🛠 Features
-* mp4 re-encoding
-* mkv re-encoding
-* video upscalling
+# Toolbox for FFmpeg
+# 🛠 Features
+* mp4 video re-encoder
+* mkv video re-encoder
+* video upscaling/down scaling
 * speed up video
