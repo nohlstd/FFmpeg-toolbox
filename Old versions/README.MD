@@ -1,1 +1,1 @@
-Tutaj znajdziesz stare wersje
+You can find old version there.
