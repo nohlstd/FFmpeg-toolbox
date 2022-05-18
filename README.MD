@@ -1,5 +1,5 @@
 # 🎥 FFmpeg toolbox by bluedragon
-advanced ffmpeg toolbox for windows
+Advanced ffmpeg toolbox for windows
 
 # 🛠 Features
 * mp4 video re-encoder
