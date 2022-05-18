@@ -12,6 +12,7 @@ ECHO 1.  Selection 1  (for .mp4)
 ECHO 2.  Selection 2  (for .mkv)
 ECHO 3.  Selection 3 (upscaling)
 ECHO 4.  Selection 4 (speed up video [bugged])
+ECHO 5.  Selection 5 (resampling video [motion blur])
 ECHO ==========PRESS 'Q' TO QUIT=========
 ECHO.
 
