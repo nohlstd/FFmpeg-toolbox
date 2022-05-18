@@ -4,10 +4,10 @@ CLS
 
 :MENU
 CLS
-color 04
+color 0c
+ECHO ===================================
 ECHO ====== CREATED BY BLUE DRAGON ======
-ECHO ====================================
-ECHO ------------------------------------
+ECHO ===================================
 ECHO 1.  Selection 1  (for .mp4)
 ECHO 2.  Selection 2  (for .mkv)
 ECHO 3.  Selection 3 (upscaling)
