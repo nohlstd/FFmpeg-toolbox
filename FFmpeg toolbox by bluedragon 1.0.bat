@@ -22,6 +22,7 @@ IF /I '%INPUT%'=='1' GOTO Selection1
 IF /I '%INPUT%'=='2' GOTO Selection2
 IF /I '%INPUT%'=='3' GOTO Selection3
 IF /I '%INPUT%'=='4' GOTO Selection4
+IF /I '%INPUT%'=='5' GOTO Selection5
 IF /I '%INPUT%'=='Q' GOTO Quit
 
 CLS
@@ -99,10 +100,24 @@ echo.
 timeout 1 >nul
 echo What's the speed of audio you want? ex. "0.5" without brackets (higher equal slower, lower equals faster)
 set /p atempo=
-
 timeout 1 >nul
 CLS
 ffmpeg -i input.mp4 -filter_complex "[0:v]setpts=%pts%*PTS[v];[0:a]atempo=%atempo%[a]" -map "[v]" -map "[a]" output.mp4
 pause
 
+:Selection5
+Color 0D
+echo.
+echo.
+echo.
+echo.
+echo What you want output fps?
+set /p fpsy=
+echo.
+timeout 1 >nul
+CLS
+ffmpeg.exe -i input.mp4 -crf 15 -vf "tmix=frames=4:weights=1, scale=1920x1080:flags=lanczos, fps=%fpsy%" output-resampled.mp4
+pause
+
 :Quit
+
