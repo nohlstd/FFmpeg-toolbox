@@ -1,4 +1,4 @@
-# 🎥 FFmpeg toolbox by bluedragon
+# 🎥 FFmpeg toolbox
 Advanced ffmpeg toolbox for windows
 
 # 🛠 Features
